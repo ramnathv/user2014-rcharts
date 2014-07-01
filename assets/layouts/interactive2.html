@@ -1,0 +1,17 @@
+---
+layout: slide
+---
+ 
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm{{slide.num}}" data-cell="{{slide.num}}">
+      {{{ slide.content }}}
+      {{> editor }}
+    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult{{slide.num}}" class='shiny-html-output {{slide.lib}}'></iframe>
+  </div>
+</div>

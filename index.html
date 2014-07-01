@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Visualizations</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Interactive Visualizations">
+  <meta name="author" content="Ramnath Vaidyanathan (@ramnath_vaidya)">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/app.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+<script src="libraries/widgets/highcharts/js/jquery-1.9.1.min.js"></script>
+<script src="libraries/widgets/highcharts/js/highcharts.js"></script>
+<script src="libraries/widgets/highcharts/js/highcharts-more.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Interactive Visualizations</h1>
+    <h2>rCharts, UseR 2014</h2>
+    <p>Ramnath Vaidyanathan (@ramnath_vaidya)<br/>McGill University</p>
+  </hgroup>
+    <a href="https://github.com/slidify/idocs/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="nobackground quote" id="slide-1" style="background:;">
+  <article data-timings="">
+    <p><q>rCharts is an R package to create, customize and share interactive visualizations by leveraging javascript libraries.</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="rchartssite" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm3" data-cell="3">
+      <p><a class='example'>NVD3</a></p>
+
+<p><textarea class='interactive' id='interactive3' data-cell='3' data-results='asis' style='display:none'>hair_eye_male &lt;- subset(as.data.frame(HairEyeColor), Sex == &#39;Male&#39;)
+library(rCharts)
+n1 &lt;- nPlot(Freq ~ Hair, group = &#39;Eye&#39;, data = hair_eye_male, type = &#39;multiBarChart&#39;)
+n1</textarea></p>
+
+      <div id='aceeditor3' style="height:100px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode3' data-action='runCode'
+            data-cell='3' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode3' data-action='testCode'
+             data-cell='3' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult3' data-action='clearResult'
+             data-cell='3' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint3' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='3' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult3" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm4" data-cell="4">
+      <p><textarea class='interactive' id='interactive4' data-cell='4' data-results='asis' style='display:none'>hair_eye_male &lt;- subset(as.data.frame(HairEyeColor), Sex == &#39;Male&#39;)
+library(rCharts)
+n1 &lt;- nPlot(Freq ~ Hair, group = &#39;Eye&#39;, data = hair_eye_male, type = &#39;multiBarChart&#39;)
+n1$chart(color = c(&#39;brown&#39;, &#39;blue&#39;, &#39;#594c26&#39;, &#39;green&#39;))
+n1</textarea></p>
+
+      <div id='aceeditor4' style="height:100px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode4' data-action='runCode'
+            data-cell='4' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode4' data-action='testCode'
+             data-cell='4' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult4' data-action='clearResult'
+             data-cell='4' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint4' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='4' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult4" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm5" data-cell="5">
+      <p><textarea class='interactive' id='interactive5' data-cell='5' data-results='asis' style='display:none'>library(rCharts)
+dTable(MASS::survey)</textarea></p>
+
+      <div id='aceeditor5' style="height:40px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode5' data-action='runCode'
+            data-cell='5' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode5' data-action='testCode'
+             data-cell='5' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult5' data-action='clearResult'
+             data-cell='5' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint5' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='5' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult5" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm6" data-cell="6">
+      <p><a class='example'>Highcharts</a></p>
+
+<p><textarea class='interactive' id='interactive6' data-cell='6' data-results='asis' style='display:none'>library(rCharts)
+hPlot(Pulse ~ Height, data = MASS::survey, size = &#39;Age&#39;, group = &#39;Exer&#39;, type = &#39;bubble&#39;, title = &#39;Zoom demo&#39;, subtitle = &#39;bubble chart&#39;
+)</textarea></p>
+
+      <div id='aceeditor6' style="height:75px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode6' data-action='runCode'
+            data-cell='6' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode6' data-action='testCode'
+             data-cell='6' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult6' data-action='clearResult'
+             data-cell='6' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint6' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='6' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult6" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm7" data-cell="7">
+      <p><textarea class='interactive' id='interactive7' data-cell='7' data-results='asis' style='display:none'>library(rCharts)
+rPlot(mpg ~ wt | am + vs, data = mtcars, color = &#39;gear&#39;, type = &#39;point&#39;)</textarea></p>
+
+      <div id='aceeditor7' style="height:75px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode7' data-action='runCode'
+            data-cell='7' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode7' data-action='testCode'
+             data-cell='7' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult7' data-action='clearResult'
+             data-cell='7' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint7' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='7' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult7" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Multiple Libraries Supported</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src='assets/img/rcharts_libs.png'></img></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="rmapssite" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm10" data-cell="10">
+      <p><textarea class='interactive' id='interactive10' data-cell='10' data-results='asis' style='display:none'>library(rCharts)
+map &lt;- Leaflet$new()
+map$setView(c(51.505, -0.09), zoom = 13)
+map$tileLayer(provider = &#39;Stamen.Watercolor&#39;)
+map$marker(c(51.5, -0.09), bindPopup = &#39;Hi. I am a popup&#39;)
+map</textarea></p>
+
+      <div id='aceeditor10' style="height:160px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode10' data-action='runCode'
+            data-cell='10' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode10' data-action='testCode'
+             data-cell='10' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult10' data-action='clearResult'
+             data-cell='10' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint10' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='10' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult10" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <article data-timings="">
+    <p><a class='example'>MapBox</a></p>
+
+<pre><code class="r">rmeetups = readRDS(&#39;data/rmeetups.rds&#39;)
+L1 &lt;- Mapbox2()
+L1$set(width = 1600, height = 800, dom = &#39;map&#39;, map_id = &#39;ramnathv.i2lkbedb&#39;)
+L1$setView(c(-30, 130), 2)
+L1$set(geojson = toGeoJSON(rmeetups), hover = TRUE)
+L1
+</code></pre>
+
+<p><iframe src=' assets/fig/unnamed-chunk-8.html ' scrolling='no' frameBorder='0' seamless class='rChart mapbox2 ' id=iframe- map ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <article data-timings="">
+    <p><a class='example'>DataMaps</a></p>
+
+<pre><code class="r">library(rMaps)
+ichoropleth(Crime ~ State, data = violent_crime, animate = &quot;Year&quot;)
+</code></pre>
+
+<p><iframe src=' assets/fig/unnamed-chunk-9.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart17827fac131c ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <article data-timings="">
+    <p><a class='example'>Crosslet</a></p>
+
+<pre><code class="r">d1 &lt;- crosslet(
+  x = &quot;country&quot;, 
+  y = c(&quot;web_index&quot;, &quot;universal_access&quot;), 
+  data = web_index, 
+  map = map_world(geo = list(url = &#39;world.topo.json&#39;))
+)
+d1
+</code></pre>
+
+<p><iframe src=' assets/fig/unnamed-chunk-11.html ' scrolling='no' frameBorder='0' seamless class='rChart crosslet ' id=iframe- chart17827a1ad4bf ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>More Interactivity</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm15" data-cell="15">
+      <p><a class='example'>AngularJS</a></p>
+
+<p><textarea class='interactive' id='interactive15' data-cell='15' data-results='asis' style='display:none'>library(rCharts)
+n1 &lt;- nPlot(mpg ~ wt, data = mtcars, type = &#39;scatterChart&#39;, group = &#39;gear&#39;)
+n1$addControls(&#39;x&#39;, &#39;wt&#39;, names(mtcars))
+n1</textarea></p>
+
+      <div id='aceeditor15' style="height:75px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode15' data-action='runCode'
+            data-cell='15' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode15' data-action='testCode'
+             data-cell='15' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult15' data-action='clearResult'
+             data-cell='15' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint15' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='15' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult15" class='shiny-html-output '></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="bigger" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>UI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a class='example'>Shiny</a></p>
+
+<pre><code class="r">ui = bootstrapPage(
+  sidebarPanel(
+    selectInput(&#39;sex&#39;, &#39;Choose Sex&#39;, c(&#39;Male&#39;, &#39;Female&#39;)),
+    selectInput(&#39;type&#39;, &#39;Choose Type&#39;, 
+      c(&#39;multiBarChart&#39;, &#39;multiBarHorizontalChart&#39;)
+    )
+  ),
+  mainPanel(
+    chartOutput(&#39;nvd3plot&#39;, &#39;nvd3&#39;)
+  )
+)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="bigger" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Server</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a class='example'>Shiny</a></p>
+
+<pre><code class="r">server = function(input, output){
+  output$nvd3plot &lt;- renderChart2({
+    haireye &lt;- as.data.frame(HairEyeColor)
+    n1 &lt;- nPlot(Freq ~ Hair, group = &#39;Eye&#39;, type = input$type,
+      data = subset(haireye, Sex == input$sex)
+    )
+    n1$set(width = 600)
+    n1
+  })
+}
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Interactive Chart with Shiny Controls</h2>
+  </hgroup>
+  <article data-timings="">
+    <div class="row-fluid">
+  <div class="span4">
+    <form class="well">
+      <label class="control-label" for="sex">Choose Sex</label>
+      <select id="sex"><option value="Male" selected>Male</option>
+<option value="Female">Female</option></select>
+      <script type="application/json" data-for="sex" data-nonempty="">{}</script>
+      <label class="control-label" for="type">Choose Type</label>
+      <select id="type"><option value="multiBarChart" selected>multiBarChart</option>
+<option value="multiBarHorizontalChart">multiBarHorizontalChart</option></select>
+      <script type="application/json" data-for="type" data-nonempty="">{}</script>
+    </form>
+  </div>
+  <div class="span8">
+    <div id="nvd3plot" class="shiny-html-output nvd3 rChart"></div>
+  </div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Custom Visualizations</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="bigger" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Generate Timeline</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">sachin = readRDS(&#39;data/sachin.rds&#39;)
+m = Timeline$new()
+m$main(
+  headline =  &quot;100 Centuries of Sachin&quot;,
+  type = &#39;default&#39;,
+  text = &quot;A Tribute to Sachin Tendulkar&quot;,
+  startDate =  &quot;1990,08,14&quot;,
+  asset = list(
+    media = &#39;http://www.youtube.com/watch?v=6PxAandi6r4&#39;
+  )
+)
+m$config(font = &quot;Merriweather-Newscycle&quot;)
+m$event(sachin)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <article data-timings="">
+    <iframe src='assets/fig/sachin.html' width = 1200 height=600></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <article data-timings="">
+    <iframe src='http://rcharts.io/viewer/?5649396' width = 1200 height=600></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="bigger" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Share Easily</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r"># save
+n1$save(&#39;mychart.html&#39;)
+# publish
+n1$publish(&#39;mychart.html&#39;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>How it Works?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <article data-timings="">
+    <iframe src="http://jsfiddle.net/RR8Ub/embedded/result/presentation" height=600 width=100%></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <article data-timings="">
+    <iframe src="http://jsfiddle.net/RR8Ub/embedded/resources/presentation/" height=600 width=100%></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="bigger" id="slide-27" style="background:;">
+  <article data-timings="">
+    <pre><code class="yaml">uvcharts:
+  jshead: [js/d3.v3.min.js, js/uvcharts.js]
+  cdn:
+    jshead:
+      - &quot;http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js&quot;
+      - &quot;http://imaginea.github.io/uvCharts/js/uvcharts.js&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <article data-timings="">
+    <iframe src="http://jsfiddle.net/RR8Ub/embedded/js/presentation/" height=600 width=100%></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="RAW bigger center" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Layout</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="js">&lt;script&gt;
+  var graphdef = {{{ chartParams }}}
+  var config = {
+    meta: {
+      position: &quot;#{{ chartId }}&quot;
+    }
+  }
+  var chart = uv.chart(graphdef.type, graphdef, config)
+&lt;/script&gt;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
+
+<!-- Tue Jul  1 13:29:36 2014 -->
+
+<TABLE border=1>
+<TR> <TH>  </TH> <TH> Hair </TH> <TH> Eye </TH> <TH> Sex </TH> <TH> Freq </TH>  </TR>
+  <TR> <TD align="right"> 1 </TD> <TD> Black </TD> <TD> Brown </TD> <TD> Male </TD> <TD align="right"> 32.00 </TD> </TR>
+  <TR> <TD align="right"> 2 </TD> <TD> Brown </TD> <TD> Brown </TD> <TD> Male </TD> <TD align="right"> 53.00 </TD> </TR>
+  <TR> <TD align="right"> 3 </TD> <TD> Red </TD> <TD> Brown </TD> <TD> Male </TD> <TD align="right"> 10.00 </TD> </TR>
+  <TR> <TD align="right"> 4 </TD> <TD> Blond </TD> <TD> Brown </TD> <TD> Male </TD> <TD align="right"> 3.00 </TD> </TR>
+  <TR> <TD align="right"> 5 </TD> <TD> Black </TD> <TD> Blue </TD> <TD> Male </TD> <TD align="right"> 11.00 </TD> </TR>
+  <TR> <TD align="right"> 6 </TD> <TD> Brown </TD> <TD> Blue </TD> <TD> Male </TD> <TD align="right"> 50.00 </TD> </TR>
+  <TR> <TD align="right"> 7 </TD> <TD> Red </TD> <TD> Blue </TD> <TD> Male </TD> <TD align="right"> 10.00 </TD> </TR>
+  <TR> <TD align="right"> 8 </TD> <TD> Blond </TD> <TD> Blue </TD> <TD> Male </TD> <TD align="right"> 30.00 </TD> </TR>
+  <TR> <TD align="right"> 9 </TD> <TD> Black </TD> <TD> Hazel </TD> <TD> Male </TD> <TD align="right"> 10.00 </TD> </TR>
+  <TR> <TD align="right"> 10 </TD> <TD> Brown </TD> <TD> Hazel </TD> <TD> Male </TD> <TD align="right"> 25.00 </TD> </TR>
+   </TABLE>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="center medium" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>JSON</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="js">&quot;dataset&quot;: {
+  &quot;Brown&quot;: [
+    {&quot;name&quot;: &quot;Black&quot;, &quot;value&quot;: 32 },
+    {&quot;name&quot;: &quot;Brown&quot;, &quot;value&quot;: 53 },
+    {&quot;name&quot;: &quot;Red&quot;,&quot;value&quot;:  10},
+    {&quot;name&quot;: &quot;Blond&quot;, &quot;value&quot;: 3} 
+  ],
+  &quot;Blue&quot;: [
+    {&quot;name&quot;: &quot;Black&quot;, &quot;value&quot;: 11 },
+    {&quot;name&quot;: &quot;Brown&quot;, &quot;value&quot;: 50 },
+    {&quot;name&quot;: &quot;Red&quot;,&quot;value&quot;:  10},
+    {&quot;name&quot;: &quot;Blond&quot;, &quot;value&quot;: 30} 
+  ],
+  ...
+} 
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="bigger" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Wrap into Function</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">uPlot &lt;- function(x, y, data, group = NULL, type, ...){
+  dataset = make_dataset(x = x, y = y, 
+    data = data, 
+    group = group
+  )
+  u1 &lt;- rCharts$new()
+  u1$setLib(&quot;uvcharts&quot;)
+  u1$set(
+    type = type,
+    categories = names(dataset),
+    dataset = dataset
+  )
+  return(u1)
+}
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <article data-timings="">
+     
+<div class='row-fluid'>
+  <div class='span12'>
+    <form id="knitForm33" data-cell="33">
+      <p><textarea class='interactive' id='interactive33' data-cell='33' data-results='asis' style='display:none'>library(rCharts)
+uPlot(x = &#39;Sex&#39;, y = &#39;Freq&#39;, data = as.data.frame(HairEyeColor), group = &#39;Hair&#39;, type = &#39;Bar&#39;)</textarea></p>
+
+      <div id='aceeditor33' style="height:40px;"></div>
+      <div class='interactive btn-toolbar pull-left'>
+        <div class='btn-group'>
+          <a class='btn btn-small action-button' id='runCode33' data-action='runCode'
+            data-cell='33' rel='tooltip' data-title='Run Code'>
+            <i class='icon-play'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='testCode33' data-action='testCode'
+             data-cell='33' rel='tooltip' data-title='Test Code'>
+            <i class='icon-check'></i>
+          </a>
+          <a class='btn btn-small iBtn' id='clearResult33' data-action='clearResult'
+             data-cell='33' rel='tooltip' data-title='Clear Output'>
+            <i class="icon-remove"></i>
+          </a>
+          <a class='btn  btn-small iBtn' id='getHint33' rel='tooltip' 
+            data-title="Get Hint" data-action='getHint'
+            data-cell='33' data-hint="">
+            <i class="icon-bookmark"></i>
+          </a>
+        </div>
+      </div>    </form>
+  </div>
+</div>
+<div class='row-fluid'>
+  <div class='span12'>
+    <iframe id="knitResult33" class='shiny-html-output uvcharts'></iframe>
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>References</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><a href="http://rcharts.io">rCharts</a></li>
+<li><a href="http://rmaps.github.io">rMaps</a></li>
+<li><a href="http://rcharts.io/gallery">rCharts Gallery</a></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Credits</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Kenton Russel and Thomas Reinholdsson for coauthoring rCharts.</li>
+<li><a href="@opencpu">Jeroen Ooms</a> for <a href="http://opencpu.io">OpenCPU</a></li>
+<li>Authors of all the JS Libraries I have liberally used.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Thank You</h2>
+  </hgroup>
+  <article data-timings="">
+    <style>iframe.uvcharts{height: 600px;}</style>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title=''>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title=''>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title=''>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title=''>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title=''>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Multiple Libraries Supported'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title=''>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title=''>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title=''>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title=''>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title=''>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='More Interactivity'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title=''>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='UI'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Server'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Interactive Chart with Shiny Controls'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Custom Visualizations'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Generate Timeline'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title=''>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title=''>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Share Easily'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='How it Works?'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title=''>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title=''>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title=''>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title=''>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Layout'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Data'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='JSON'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Wrap into Function'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title=''>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='References'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Credits'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Thank You'>
+         36
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

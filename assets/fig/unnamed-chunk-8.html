@@ -1,0 +1,2832 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css'>
+    
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1600px;
+      height: 800px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'map' class = 'rChart mapbox2'></div>    
+    <script>
+var spec = {
+ "dom": "map",
+"width":   1600,
+"height":    800,
+"map_id": "ramnathv.i2lkbedb",
+"center": [    -30,    130 ],
+"zoom":      2,
+"geojson": [
+ {
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -77.037, 38.907 ] 
+},
+"properties": {
+ "group": "Statistical Programming DC",
+"locality": "Washington",
+"country": "us",
+"members":   1902,
+"link": "http://www.meetup.com/stats-prog-dc/",
+"title": "Statistical Programming DC",
+"description": "<b>Members</b>: 1902",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -97.281, 33.178 ] 
+},
+"properties": {
+ "group": "San Diego Data Science & R Users Group",
+"locality": "Del Mar",
+"country": "us",
+"members":    479,
+"link": "http://www.meetup.com/San-Diego-Data-Science-R-Users-Group/",
+"title": "San Diego Data Science & R Users Group",
+"description": "<b>Members</b>: 479",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -87.63, 41.878 ] 
+},
+"properties": {
+ "group": "Chicago R User Group (Chicago RUG) Data and Statistics",
+"locality": "Chicago",
+"country": "us",
+"members":   1353,
+"link": "http://www.meetup.com/ChicagoRUG/",
+"title": "Chicago R User Group (Chicago RUG) Data and Statistics",
+"description": "<b>Members</b>: 1353",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.33, 47.606 ] 
+},
+"properties": {
+ "group": "Seattle useR Group (R Programming Language)",
+"locality": "Seattle",
+"country": "us",
+"members":    919,
+"link": "http://www.meetup.com/Seattle-useR/",
+"title": "Seattle useR Group (R Programming Language)",
+"description": "<b>Members</b>: 919",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "New York Open Statistical Programming Meetup",
+"locality": "New York",
+"country": "us",
+"members":   3955,
+"link": "http://www.meetup.com/nyhackr/",
+"title": "New York Open Statistical Programming Meetup",
+"description": "<b>Members</b>: 3955",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 9.4797, 51.313 ] 
+},
+"properties": {
+ "group": "Kasseler useR Group (R Programming Language)",
+"locality": "Kassel",
+"country": "de",
+"members":     66,
+"link": "http://www.meetup.com/Kassel-useR-Group/",
+"title": "Kasseler useR Group (R Programming Language)",
+"description": "<b>Members</b>: 66",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.42, 37.775 ] 
+},
+"properties": {
+ "group": "Bay Area useR Group (R Programming Language)",
+"locality": "San Francisco",
+"country": "us",
+"members":   3568,
+"link": "http://www.meetup.com/R-Users/",
+"title": "Bay Area useR Group (R Programming Language)",
+"description": "<b>Members</b>: 3568",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 151.21, -33.867 ] 
+},
+"properties": {
+ "group": "Sydney Users of  R Forum (SURF)",
+"locality": "Sydney",
+"country": "au",
+"members":    797,
+"link": "http://www.meetup.com/R-Users-Sydney/",
+"title": "Sydney Users of  R Forum (SURF)",
+"description": "<b>Members</b>: 797",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -118.49, 34.019 ] 
+},
+"properties": {
+ "group": "LA R user group",
+"locality": "Santa Monica",
+"country": "us",
+"members":   1292,
+"link": "http://www.meetup.com/LA-RUG/",
+"title": "LA R user group",
+"description": "<b>Members</b>: 1292",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 149.13, -35.282 ] 
+},
+"properties": {
+ "group": "Canberra R Users Group",
+"locality": "Canberra",
+"country": "au",
+"members":    169,
+"link": "http://www.meetup.com/Canberra-R-Users-Group/",
+"title": "Canberra R Users Group",
+"description": "<b>Members</b>: 169",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -0.12776, 51.507 ] 
+},
+"properties": {
+ "group": "LondonR",
+"locality": "London",
+"country": "gb",
+"members":    703,
+"link": "http://www.meetup.com/LondonR/",
+"title": "LondonR",
+"description": "<b>Members</b>: 703",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 144.96, -37.814 ] 
+},
+"properties": {
+ "group": "Melbourne Users of R Network (MelbURN)",
+"locality": "Melbourne",
+"country": "au",
+"members":    823,
+"link": "http://www.meetup.com/MelbURN-Melbourne-Users-of-R-Network/",
+"title": "Melbourne Users of R Network (MelbURN)",
+"description": "<b>Members</b>: 823",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.68, 45.523 ] 
+},
+"properties": {
+ "group": "Portland R User Group",
+"locality": "Portland",
+"country": "us",
+"members":    434,
+"link": "http://www.meetup.com/portland-r-user-group/",
+"title": "Portland R User Group",
+"description": "<b>Members</b>: 434",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -79.056, 35.913 ] 
+},
+"properties": {
+ "group": "Raleigh-Durham-Chapel Hill R Users Group",
+"locality": "Chapel Hill",
+"country": "us",
+"members":    383,
+"link": "http://www.meetup.com/Triangle-useR/",
+"title": "Raleigh-Durham-Chapel Hill R Users Group",
+"description": "<b>Members</b>: 383",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 103.85, 1.2801 ] 
+},
+"properties": {
+ "group": "R User Group - Singapore (RUGS)",
+"locality": "Singapore",
+"country": "sg",
+"members":    652,
+"link": "http://www.meetup.com/R-User-Group-SG/",
+"title": "R User Group - Singapore (RUGS)",
+"description": "<b>Members</b>: 652",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -104.98, 39.738 ] 
+},
+"properties": {
+ "group": "Denver R User Group",
+"locality": "Denver",
+"country": "us",
+"members":    548,
+"link": "http://www.meetup.com/DenverRUG/",
+"title": "Denver R User Group",
+"description": "<b>Members</b>: 548",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.322, 40.575 ] 
+},
+"properties": {
+ "group": "NewJerseyR",
+"locality": "Iselin",
+"country": "us",
+"members":    174,
+"link": "http://www.meetup.com/NewJerseyR/",
+"title": "NewJerseyR",
+"description": "<b>Members</b>: 174",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 4.8952,  52.37 ] 
+},
+"properties": {
+ "group": "amst-R-dam",
+"locality": "Amsterdam",
+"country": "nl",
+"members":    338,
+"link": "http://www.meetup.com/amst-R-dam/",
+"title": "amst-R-dam",
+"description": "<b>Members</b>: 338",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -79.644, 43.589 ] 
+},
+"properties": {
+ "group": "Greater Toronto Area (GTA) R User's Group",
+"locality": "Mississauga",
+"country": "ca",
+"members":    397,
+"link": "http://www.meetup.com/Greater-Toronto-Area-GTA-R-Users-Group/",
+"title": "Greater Toronto Area (GTA) R User's Group",
+"description": "<b>Members</b>: 397",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 147.32, -42.882 ] 
+},
+"properties": {
+ "group": "Hobart R Users Group",
+"locality": "Hobart",
+"country": "au",
+"members":    149,
+"link": "http://www.meetup.com/Hobart-R-Users-Group/",
+"title": "Hobart R Users Group",
+"description": "<b>Members</b>: 149",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -95.369,  29.76 ] 
+},
+"properties": {
+ "group": "Houston R Users Group",
+"locality": "Houston",
+"country": "us",
+"members":    185,
+"link": "http://www.meetup.com/houstonr/",
+"title": "Houston R Users Group",
+"description": "<b>Members</b>: 185",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -84.192, 39.759 ] 
+},
+"properties": {
+ "group": "CinDay RUG",
+"locality": "Dayton",
+"country": "us",
+"members":     98,
+"link": "http://www.meetup.com/CinDay-RUG/",
+"title": "CinDay RUG",
+"description": "<b>Members</b>: 98",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -90.199, 38.627 ] 
+},
+"properties": {
+ "group": "Saint Louis R User Group",
+"locality": "Saint Louis",
+"country": "us",
+"members":    150,
+"link": "http://www.meetup.com/Saint-Louis-RUG/",
+"title": "Saint Louis R User Group",
+"description": "<b>Members</b>: 150",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -93.267, 44.983 ] 
+},
+"properties": {
+ "group": "Twin Cities R User Group (TCRUG)",
+"locality": "Minneapolis",
+"country": "us",
+"members":    385,
+"link": "http://www.meetup.com/twincitiesrug/",
+"title": "Twin Cities R User Group (TCRUG)",
+"description": "<b>Members</b>: 385",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 8.2398, 50.078 ] 
+},
+"properties": {
+ "group": "Wiesbaden R Users Group",
+"locality": "Wiesbaden",
+"country": "de",
+"members":     26,
+"link": "http://www.meetup.com/Wiesbaden-R-Users-Group/",
+"title": "Wiesbaden R Users Group",
+"description": "<b>Members</b>: 26",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 8.5392, 47.369 ] 
+},
+"properties": {
+ "group": "ZurichR",
+"locality": "Zürich",
+"country": "ch",
+"members":     43,
+"link": "http://www.meetup.com/ZurichR/",
+"title": "ZurichR",
+"description": "<b>Members</b>: 43",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -123.11, 49.261 ] 
+},
+"properties": {
+ "group": "Vancouver R Users Group (data analysis / statistics)",
+"locality": "Vancouver",
+"country": "ca",
+"members":    531,
+"link": "http://www.meetup.com/Vancouver-R-Users-Group-data-analysis-statistics/",
+"title": "Vancouver R Users Group (data analysis / statistics)",
+"description": "<b>Members</b>: 531",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 6.1423, 46.198 ] 
+},
+"properties": {
+ "group": "GenevaR",
+"locality": "Genève",
+"country": "ch",
+"members":     15,
+"link": "http://www.meetup.com/GenevaR/",
+"title": "GenevaR",
+"description": "<b>Members</b>: 15",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -71.06, 42.358 ] 
+},
+"properties": {
+ "group": "Greater Boston useR Group (R Programming Language)",
+"locality": "Boston",
+"country": "us",
+"members":   1500,
+"link": "http://www.meetup.com/Boston-useR/",
+"title": "Greater Boston useR Group (R Programming Language)",
+"description": "<b>Members</b>: 1500",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -123.11, 49.261 ] 
+},
+"properties": {
+ "group": "Vancouver Data Visualization",
+"locality": "Vancouver",
+"country": "ca",
+"members":    823,
+"link": "http://www.meetup.com/Vancouver-Data-Visualization/",
+"title": "Vancouver Data Visualization",
+"description": "<b>Members</b>: 823",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [  -96.8,  32.78 ] 
+},
+"properties": {
+ "group": "Dallas R Users Group",
+"locality": "Dallas",
+"country": "us",
+"members":    362,
+"link": "http://www.meetup.com/Dallas-R-Users-Group/",
+"title": "Dallas R Users Group",
+"description": "<b>Members</b>: 362",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -72.928, 41.308 ] 
+},
+"properties": {
+ "group": "Connecticut R Users Group",
+"locality": "New Haven",
+"country": "us",
+"members":    152,
+"link": "http://www.meetup.com/Conneticut-R-Users-Group/",
+"title": "Connecticut R Users Group",
+"description": "<b>Members</b>: 152",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [  138.6, -34.929 ] 
+},
+"properties": {
+ "group": "Adelaide R-users group",
+"locality": "Adelaide",
+"country": "au",
+"members":     80,
+"link": "http://www.meetup.com/Adelaide-R-users-group/",
+"title": "Adelaide R-users group",
+"description": "<b>Members</b>: 80",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 12.373,  51.34 ] 
+},
+"properties": {
+ "group": "Leipzig R statistical computing",
+"locality": "Leipzig",
+"country": "de",
+"members":     80,
+"link": "http://www.meetup.com/Leipzig-R-statistical-computing/",
+"title": "Leipzig R statistical computing",
+"description": "<b>Members</b>: 80",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -6.2603,  53.35 ] 
+},
+"properties": {
+ "group": "Dublin R",
+"locality": "Dublin",
+"country": "ie",
+"members":    629,
+"link": "http://www.meetup.com/DublinR/",
+"title": "Dublin R",
+"description": "<b>Members</b>: 629",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 16.374, 48.208 ] 
+},
+"properties": {
+ "group": "Vienna<-R",
+"locality": "Vienna",
+"country": "at",
+"members":     93,
+"link": "http://www.meetup.com/ViennaR/",
+"title": "Vienna<-R",
+"description": "<b>Members</b>: 93",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -1.8904, 52.486 ] 
+},
+"properties": {
+ "group": "Birmingham R Users Meeting (BRUM)",
+"locality": "Birmingham",
+"country": "gb",
+"members":    138,
+"link": "http://www.meetup.com/BirminghamR/",
+"title": "Birmingham R Users Meeting (BRUM)",
+"description": "<b>Members</b>: 138",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [   4.35,  50.85 ] 
+},
+"properties": {
+ "group": "RBelgium",
+"locality": "Brussels",
+"country": "be",
+"members":    178,
+"link": "http://www.meetup.com/RBelgium/",
+"title": "RBelgium",
+"description": "<b>Members</b>: 178",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -97.743, 30.267 ] 
+},
+"properties": {
+ "group": "Austin R User Group",
+"locality": "Austin",
+"country": "us",
+"members":    446,
+"link": "http://www.meetup.com/Austin-R-User-Group/",
+"title": "Austin R User Group",
+"description": "<b>Members</b>: 446",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -81.694, 41.499 ] 
+},
+"properties": {
+ "group": "Greater Cleveland R Group",
+"locality": "Cleveland",
+"country": "us",
+"members":    188,
+"link": "http://www.meetup.com/Cleveland-UseR-Group/",
+"title": "Greater Cleveland R Group",
+"description": "<b>Members</b>: 188",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -84.484, 42.737 ] 
+},
+"properties": {
+ "group": "Lansing Area R Users Group",
+"locality": "East Lansing",
+"country": "us",
+"members":     16,
+"link": "http://www.meetup.com/Lansing-Area-R-Users-Group/",
+"title": "Lansing Area R Users Group",
+"description": "<b>Members</b>: 16",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -84.388, 33.749 ] 
+},
+"properties": {
+ "group": "Atlanta R Users Group",
+"locality": "Atlanta",
+"country": "us",
+"members":    370,
+"link": "http://www.meetup.com/R-Users-Atlanta/",
+"title": "Atlanta R Users Group",
+"description": "<b>Members</b>: 370",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.27, 37.872 ] 
+},
+"properties": {
+ "group": "The Berkeley R Language Beginner Study Group",
+"locality": "Berkeley",
+"country": "us",
+"members":    598,
+"link": "http://www.meetup.com/r-enthusiasts/",
+"title": "The Berkeley R Language Beginner Study Group",
+"description": "<b>Members</b>: 598",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -0.12776, 51.507 ] 
+},
+"properties": {
+ "group": "Big Data Innovation World Meetup Tour",
+"locality": "London",
+"country": "gb",
+"members":    348,
+"link": "http://www.meetup.com/BigDataIWMT/",
+"title": "Big Data Innovation World Meetup Tour",
+"description": "<b>Members</b>: 348",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 115.86, -31.953 ] 
+},
+"properties": {
+ "group": "The Perth Data Science Meetup",
+"locality": "Perth",
+"country": "au",
+"members":     96,
+"link": "http://www.meetup.com/Perth-Data-Science/",
+"title": "The Perth Data Science Meetup",
+"description": "<b>Members</b>: 96",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 6.9603, 50.938 ] 
+},
+"properties": {
+ "group": "Köln R User Group",
+"locality": "Köln",
+"country": "de",
+"members":    130,
+"link": "http://www.meetup.com/KoelnRUG/",
+"title": "Köln R User Group",
+"description": "<b>Members</b>: 130",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -117.16, 32.716 ] 
+},
+"properties": {
+ "group": "San Diego Data Science",
+"locality": "San Diego",
+"country": "us",
+"members":    204,
+"link": "http://www.meetup.com/San-Diego-Data-Science/",
+"title": "San Diego Data Science",
+"description": "<b>Members</b>: 204",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -79.383, 43.653 ] 
+},
+"properties": {
+ "group": "R Matlab Users",
+"locality": "Toronto",
+"country": "ca",
+"members":    290,
+"link": "http://www.meetup.com/R-Matlab-Users/",
+"title": "R Matlab Users",
+"description": "<b>Members</b>: 290",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -72.319, 43.649 ] 
+},
+"properties": {
+ "group": "Upper Valley R Users Group",
+"locality": "White River Junction",
+"country": "us",
+"members":     37,
+"link": "http://www.meetup.com/uvrugrp/",
+"title": "Upper Valley R Users Group",
+"description": "<b>Members</b>: 37",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -113.49, 53.544 ] 
+},
+"properties": {
+ "group": "Edmonton R User Group",
+"locality": "Edmonton",
+"country": "ca",
+"members":     72,
+"link": "http://www.meetup.com/Edmonton-R-User-Group/",
+"title": "Edmonton R User Group",
+"description": "<b>Members</b>: 72",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 18.069, 59.329 ] 
+},
+"properties": {
+ "group": "Stockholm R useR group (SRUG)",
+"locality": "Stockholm",
+"country": "se",
+"members":    392,
+"link": "http://www.meetup.com/StockholmR/",
+"title": "Stockholm R useR group (SRUG)",
+"description": "<b>Members</b>: 392",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -98.494, 29.424 ] 
+},
+"properties": {
+ "group": "Alamo City R Users Group",
+"locality": "San Antonio",
+"country": "us",
+"members":     67,
+"link": "http://www.meetup.com/Alamo-City-R-Users-Group/",
+"title": "Alamo City R Users Group",
+"description": "<b>Members</b>: 67",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 121.56, 25.091 ] 
+},
+"properties": {
+ "group": "Taiwan R User Group (R Programming Language)",
+"locality": "Taipei",
+"country": "tw",
+"members":    896,
+"link": "http://www.meetup.com/Taiwan-R/",
+"title": "Taiwan R User Group (R Programming Language)",
+"description": "<b>Members</b>: 896",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.42, 37.775 ] 
+},
+"properties": {
+ "group": "R-ladies",
+"locality": "San Francisco",
+"country": "us",
+"members":    353,
+"link": "http://www.meetup.com/R-ladies/",
+"title": "R-ladies",
+"description": "<b>Members</b>: 353",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -72.641, 42.325 ] 
+},
+"properties": {
+ "group": "Western Mass Data Science, Stats, and R",
+"locality": "Northampton",
+"country": "us",
+"members":    121,
+"link": "http://www.meetup.com/Pioneer-Valley-and-Five-College-R-Statistical-Meetup/",
+"title": "Western Mass Data Science, Stats, and R",
+"description": "<b>Members</b>: 121",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -0.12776, 51.507 ] 
+},
+"properties": {
+ "group": "London Python Data Science",
+"locality": "London",
+"country": "gb",
+"members":    203,
+"link": "http://www.meetup.com/london-python-data-science/",
+"title": "London Python Data Science",
+"description": "<b>Members</b>: 203",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -2.2485, 53.479 ] 
+},
+"properties": {
+ "group": "Manchester R user Group",
+"locality": "Manchester",
+"country": "gb",
+"members":    119,
+"link": "http://www.meetup.com/Manchester-R/",
+"title": "Manchester R user Group",
+"description": "<b>Members</b>: 119",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 174.76, -36.848 ] 
+},
+"properties": {
+ "group": "Auckland R Users Group (AKLRUG)",
+"locality": "Auckland",
+"country": "nz",
+"members":    186,
+"link": "http://www.meetup.com/Auckland-R-Users-Group-AKLRUG/",
+"title": "Auckland R Users Group (AKLRUG)",
+"description": "<b>Members</b>: 186",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.14, 37.442 ] 
+},
+"properties": {
+ "group": "Silicon Valley Python Data Science",
+"locality": "Palo Alto",
+"country": "us",
+"members":    232,
+"link": "http://www.meetup.com/sv-python-data-science/",
+"title": "Silicon Valley Python Data Science",
+"description": "<b>Members</b>: 232",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -0.12776, 51.507 ] 
+},
+"properties": {
+ "group": "DataScienceLab London",
+"locality": "London",
+"country": "gb",
+"members":    161,
+"link": "http://www.meetup.com/datasciencelab/",
+"title": "DataScienceLab London",
+"description": "<b>Members</b>: 161",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -70.642, -33.469 ] 
+},
+"properties": {
+ "group": "Grupo de Usuarios de R en Chile",
+"locality": "Santiago",
+"country": "cl",
+"members":     91,
+"link": "http://www.meetup.com/useRchile/",
+"title": "Grupo de Usuarios de R en Chile",
+"description": "<b>Members</b>: 91",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "NYC Stats Programming Master Classes",
+"locality": "New York",
+"country": "us",
+"members":    474,
+"link": "http://www.meetup.com/datascienceclasses/",
+"title": "NYC Stats Programming Master Classes",
+"description": "<b>Members</b>: 474",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -93.267, 44.983 ] 
+},
+"properties": {
+ "group": "SAS Users Group",
+"locality": "Minneapolis",
+"country": "us",
+"members":     42,
+"link": "http://www.meetup.com/SAS-Users-Group/",
+"title": "SAS Users Group",
+"description": "<b>Members</b>: 42",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -117.92, 33.641 ] 
+},
+"properties": {
+ "group": "Future Chief Data Scientists in Orange County, CA",
+"locality": "Costa Mesa",
+"country": "us",
+"members":    228,
+"link": "http://www.meetup.com/Future-Chief-Data-Scientists-in-Orange-County-CA/",
+"title": "Future Chief Data Scientists in Orange County, CA",
+"description": "<b>Members</b>: 228",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -86.783, 36.167 ] 
+},
+"properties": {
+ "group": "Nashville R Users Group",
+"locality": "Nashville",
+"country": "us",
+"members":    102,
+"link": "http://www.meetup.com/Nashville-R-Users-Group/",
+"title": "Nashville R Users Group",
+"description": "<b>Members</b>: 102",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -119.7, 34.421 ] 
+},
+"properties": {
+ "group": "Santa Barbara R Users Group",
+"locality": "Santa Barbara",
+"country": "us",
+"members":    121,
+"link": "http://www.meetup.com/Santa-Barbara-R-Users-Group/",
+"title": "Santa Barbara R Users Group",
+"description": "<b>Members</b>: 121",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.42, 37.775 ] 
+},
+"properties": {
+ "group": "Druid",
+"locality": "San Francisco",
+"country": "us",
+"members":    203,
+"link": "http://www.meetup.com/druidio/",
+"title": "Druid",
+"description": "<b>Members</b>: 203",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [   4.35,  50.85 ] 
+},
+"properties": {
+ "group": "MLGeek Brussels",
+"locality": "Brussels",
+"country": "be",
+"members":     80,
+"link": "http://www.meetup.com/MLGeek-Brussels/",
+"title": "MLGeek Brussels",
+"description": "<b>Members</b>: 80",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -75.697, 45.422 ] 
+},
+"properties": {
+ "group": "R Helpdesk",
+"locality": "Ottawa",
+"country": "ca",
+"members":     51,
+"link": "http://www.meetup.com/R-Helpdesk/",
+"title": "R Helpdesk",
+"description": "<b>Members</b>: 51",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -71.11, 42.374 ] 
+},
+"properties": {
+ "group": "Boston Data Mining",
+"locality": "Cambridge",
+"country": "us",
+"members":   1669,
+"link": "http://www.meetup.com/Boston-Data-Mining/",
+"title": "Boston Data Mining",
+"description": "<b>Members</b>: 1669",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 2.3522, 48.857 ] 
+},
+"properties": {
+ "group": "R Addicts Paris",
+"locality": "Paris",
+"country": "fr",
+"members":    341,
+"link": "http://www.meetup.com/rparis/",
+"title": "R Addicts Paris",
+"description": "<b>Members</b>: 341",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -79.996, 40.441 ] 
+},
+"properties": {
+ "group": "Pittsburgh useR Group",
+"locality": "Pittsburgh",
+"country": "us",
+"members":    140,
+"link": "http://www.meetup.com/Pittsburgh-useR-Group/",
+"title": "Pittsburgh useR Group",
+"description": "<b>Members</b>: 140",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -1.4701, 53.381 ] 
+},
+"properties": {
+ "group": "SheffieldR - Sheffield R Users Group",
+"locality": "Sheffield",
+"country": "gb",
+"members":     70,
+"link": "http://www.meetup.com/SheffieldR-Sheffield-R-Users-Group/",
+"title": "SheffieldR - Sheffield R Users Group",
+"description": "<b>Members</b>: 70",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -83.921, 35.961 ] 
+},
+"properties": {
+ "group": "Knoxville R Users Group (KRUG)",
+"locality": "Knoxville",
+"country": "us",
+"members":     86,
+"link": "http://www.meetup.com/Knoxville-R-Users-Group/",
+"title": "Knoxville R Users Group (KRUG)",
+"description": "<b>Members</b>: 86",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -75.49, 40.608 ] 
+},
+"properties": {
+ "group": "Lehigh Valley Data Analysis & Business Intelligence",
+"locality": "Allentown",
+"country": "us",
+"members":     35,
+"link": "http://www.meetup.com/Lehigh-Valley-Data-Analysis-Business-Intelligence/",
+"title": "Lehigh Valley Data Analysis & Business Intelligence",
+"description": "<b>Members</b>: 35",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.08, 37.386 ] 
+},
+"properties": {
+ "group": "Silicon Valley Big Data Science",
+"locality": "Mountain View",
+"country": "us",
+"members":   1156,
+"link": "http://www.meetup.com/Silicon-Valley-Big-Data-Science/",
+"title": "Silicon Valley Big Data Science",
+"description": "<b>Members</b>: 1156",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.42, 37.775 ] 
+},
+"properties": {
+ "group": "San Francisco Big Data Science",
+"locality": "San Francisco",
+"country": "us",
+"members":   1071,
+"link": "http://www.meetup.com/San-Francisco-Big-Data-Science/",
+"title": "San Francisco Big Data Science",
+"description": "<b>Members</b>: 1071",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.04, 37.369 ] 
+},
+"properties": {
+ "group": "Big Data Gods",
+"locality": "Sunnyvale",
+"country": "us",
+"members":    556,
+"link": "http://www.meetup.com/Big-Data-Gods/",
+"title": "Big Data Gods",
+"description": "<b>Members</b>: 556",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -82.325, 29.652 ] 
+},
+"properties": {
+ "group": "R Users Group, Gainesville, FL",
+"locality": "Gainesville",
+"country": "us",
+"members":     53,
+"link": "http://www.meetup.com/R-Users-Group-Gainesville-FL/",
+"title": "R Users Group, Gainesville, FL",
+"description": "<b>Members</b>: 53",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -111.05, 45.678 ] 
+},
+"properties": {
+ "group": "Bozeman useR Group (R Programming Language)",
+"locality": "Bozeman",
+"country": "us",
+"members":     33,
+"link": "http://www.meetup.com/Bozeman-useR-Group-R-Programming-Language/",
+"title": "Bozeman useR Group (R Programming Language)",
+"description": "<b>Members</b>: 33",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.42, 37.775 ] 
+},
+"properties": {
+ "group": "Data Hackers: San Francisco",
+"locality": "San Francisco",
+"country": "us",
+"members":    438,
+"link": "http://www.meetup.com/datahackers/",
+"title": "Data Hackers: San Francisco",
+"description": "<b>Members</b>: 438",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -83.046, 42.331 ] 
+},
+"properties": {
+ "group": "Detroit useR Group (R Programming Language)",
+"locality": "Detroit",
+"country": "us",
+"members":     43,
+"link": "http://www.meetup.com/Detroit-useR-Group-R-Programming-Language/",
+"title": "Detroit useR Group (R Programming Language)",
+"description": "<b>Members</b>: 43",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -97.743, 30.267 ] 
+},
+"properties": {
+ "group": "ATX Data Science",
+"locality": "Austin",
+"country": "us",
+"members":    235,
+"link": "http://www.meetup.com/ATX-Data-Science/",
+"title": "ATX Data Science",
+"description": "<b>Members</b>: 235",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.33, 47.606 ] 
+},
+"properties": {
+ "group": "Data Science Seattle/Bellevue",
+"locality": "Seattle",
+"country": "us",
+"members":    240,
+"link": "http://www.meetup.com/Data-Science-Seattle-Bellevue/",
+"title": "Data Science Seattle/Bellevue",
+"description": "<b>Members</b>: 240",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -86.158, 39.768 ] 
+},
+"properties": {
+ "group": "Indy useR Group",
+"locality": "Indianapolis",
+"country": "us",
+"members":     41,
+"link": "http://www.meetup.com/Indy-useR-Group/",
+"title": "Indy useR Group",
+"description": "<b>Members</b>: 41",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.08, 37.386 ] 
+},
+"properties": {
+ "group": "Silicon Valley Data Science Journal Club",
+"locality": "Mountain View",
+"country": "us",
+"members":    327,
+"link": "http://www.meetup.com/Silicon-Valley-Data-Science-Journal-Club/",
+"title": "Silicon Valley Data Science Journal Club",
+"description": "<b>Members</b>: 327",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.42, 37.775 ] 
+},
+"properties": {
+ "group": "SF Data Science",
+"locality": "San Francisco",
+"country": "us",
+"members":   1755,
+"link": "http://www.meetup.com/SF-Data-Science/",
+"title": "SF Data Science",
+"description": "<b>Members</b>: 1755",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 98.993, 18.788 ] 
+},
+"properties": {
+ "group": "Chiang Mai R User Group (CMRUG)",
+"locality": "Chiang Mai",
+"country": "th",
+"members":      5,
+"link": "http://www.meetup.com/Chiang-Mai-R-User-Group-CMRUG/",
+"title": "Chiang Mai R User Group (CMRUG)",
+"description": "<b>Members</b>: 5",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 73.857,  18.52 ] 
+},
+"properties": {
+ "group": "Pune R User Group",
+"locality": "Pune",
+"country": "in",
+"members":    145,
+"link": "http://www.meetup.com/Pune-R-User-Group/",
+"title": "Pune R User Group",
+"description": "<b>Members</b>: 145",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -83.046, 42.331 ] 
+},
+"properties": {
+ "group": "Data+Visualization Detroit",
+"locality": "Detroit",
+"country": "us",
+"members":    108,
+"link": "http://www.meetup.com/Data-Visualization-Detroit/",
+"title": "Data+Visualization Detroit",
+"description": "<b>Members</b>: 108",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 144.96, -37.814 ] 
+},
+"properties": {
+ "group": "Statistical Society of Australia Victorian Branch",
+"locality": "Melbourne",
+"country": "au",
+"members":    187,
+"link": "http://www.meetup.com/Statistical-Society-of-Australia-Victorian-Branch/",
+"title": "Statistical Society of Australia Victorian Branch",
+"description": "<b>Members</b>: 187",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -3.1883, 55.953 ] 
+},
+"properties": {
+ "group": "R Users & Modelling Systems  Community",
+"locality": "Edinburgh",
+"country": "gb",
+"members":     22,
+"link": "http://www.meetup.com/R_User_Group/",
+"title": "R Users & Modelling Systems  Community",
+"description": "<b>Members</b>: 22",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.212, 44.476 ] 
+},
+"properties": {
+ "group": "Burlington R Users",
+"locality": "Burlington",
+"country": "us",
+"members":     67,
+"link": "http://www.meetup.com/Burlington-R-Users/",
+"title": "Burlington R Users",
+"description": "<b>Members</b>: 67",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [  -96.8,  32.78 ] 
+},
+"properties": {
+ "group": "Big Data in the Big D",
+"locality": "Dallas",
+"country": "us",
+"members":    184,
+"link": "http://www.meetup.com/Big-Data-in-the-Big-D/",
+"title": "Big Data in the Big D",
+"description": "<b>Members</b>: 184",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "NYC Julia User Group",
+"locality": "New York",
+"country": "us",
+"members":    149,
+"link": "http://www.meetup.com/NYC-Julia-User-Group/",
+"title": "NYC Julia User Group",
+"description": "<b>Members</b>: 149",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [  19.04, 47.498 ] 
+},
+"properties": {
+ "group": "Budapest Users of R Network",
+"locality": "Budapest",
+"country": "hu",
+"members":    174,
+"link": "http://www.meetup.com/Budapest-Users-of-R-Network/",
+"title": "Budapest Users of R Network",
+"description": "<b>Members</b>: 174",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 120.98,   14.6 ] 
+},
+"properties": {
+ "group": "R Users Group - Philippines",
+"locality": "Manila",
+"country": "ph",
+"members":     75,
+"link": "http://www.meetup.com/R-Users-Group-Philippines/",
+"title": "R Users Group - Philippines",
+"description": "<b>Members</b>: 75",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "New York R Users Group",
+"locality": "New York",
+"country": "us",
+"members":    321,
+"link": "http://www.meetup.com/New-York-R-Users-Group/",
+"title": "New York R Users Group",
+"description": "<b>Members</b>: 321",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -155.09,  19.73 ] 
+},
+"properties": {
+ "group": "East Hawaii R Users Group",
+"locality": "Hilo",
+"country": "us",
+"members":     16,
+"link": "http://www.meetup.com/East-Hawaii-R-Users-Group/",
+"title": "East Hawaii R Users Group",
+"description": "<b>Members</b>: 16",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -4.2518, 55.864 ] 
+},
+"properties": {
+ "group": "Glasgow- R Users Group Modelling Systems Community",
+"locality": "Glasgow",
+"country": "gb",
+"members":      6,
+"link": "http://www.meetup.com/GlasgowR-Users-Group-and-Modelling-Systems-Community/",
+"title": "Glasgow- R Users Group Modelling Systems Community",
+"description": "<b>Members</b>: 6",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 12.568, 55.676 ] 
+},
+"properties": {
+ "group": "CopenhagenR - useR Group",
+"locality": "Copenhagen",
+"country": "dk",
+"members":    142,
+"link": "http://www.meetup.com/CopenhagenR-useR-Group/",
+"title": "CopenhagenR - useR Group",
+"description": "<b>Members</b>: 142",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 174.78, -41.286 ] 
+},
+"properties": {
+ "group": "Wellington R Users Group (WRUG)",
+"locality": "Wellington",
+"country": "nz",
+"members":     92,
+"link": "http://www.meetup.com/Wellington-R-Users-Group-WRUG/",
+"title": "Wellington R Users Group (WRUG)",
+"description": "<b>Members</b>: 92",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 78.487, 17.385 ] 
+},
+"properties": {
+ "group": "R Users Group Hyderabad(RUGH)",
+"locality": "Hyderabad",
+"country": "in",
+"members":    324,
+"link": "http://www.meetup.com/R-Users-Group-Hyderabad/",
+"title": "R Users Group Hyderabad(RUGH)",
+"description": "<b>Members</b>: 324",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 72.878, 19.076 ] 
+},
+"properties": {
+ "group": "mumbai-r-user-group",
+"locality": "Mumbai",
+"country": "in",
+"members":     81,
+"link": "http://www.meetup.com/mumbai-r-user-group/",
+"title": "mumbai-r-user-group",
+"description": "<b>Members</b>: 81",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.076, 4.5981 ] 
+},
+"properties": {
+ "group": "Bogotá R Users Group",
+"locality": "Bogotá",
+"country": "co",
+"members":    108,
+"link": "http://www.meetup.com/Bogota-R-Users-Group/",
+"title": "Bogotá R Users Group",
+"description": "<b>Members</b>: 108",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [   4.72,  8.147 ] 
+},
+"properties": {
+ "group": "FEDPOFA R Users Group",
+"locality": "Offa",
+"country": "ng",
+"members":     21,
+"link": "http://www.meetup.com/FEDPOFA-R-Users-Group/",
+"title": "FEDPOFA R Users Group",
+"description": "<b>Members</b>: 21",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "Cascading (New York Metro)",
+"locality": "New York",
+"country": "us",
+"members":     29,
+"link": "http://www.meetup.com/Cascading-New-York-Metro/",
+"title": "Cascading (New York Metro)",
+"description": "<b>Members</b>: 29",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 9.1217, 39.224 ] 
+},
+"properties": {
+ "group": "InsulaR",
+"locality": "Cagliari",
+"country": "it",
+"members":      2,
+"link": "http://www.meetup.com/InsulaR/",
+"title": "InsulaR",
+"description": "<b>Members</b>: 2",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -79.411, 43.762 ] 
+},
+"properties": {
+ "group": "GTA SAS Training Meetup Group",
+"locality": "North York",
+"country": "ca",
+"members":     35,
+"link": "http://www.meetup.com/GTA-SAS-Training-Meetup-Group/",
+"title": "GTA SAS Training Meetup Group",
+"description": "<b>Members</b>: 35",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.554, 45.509 ] 
+},
+"properties": {
+ "group": "Montreal R User Group",
+"locality": "Montréal",
+"country": "ca",
+"members":    489,
+"link": "http://www.meetup.com/Montreal-R-User-Group/",
+"title": "Montreal R User Group",
+"description": "<b>Members</b>: 489",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 2.1734, 41.385 ] 
+},
+"properties": {
+ "group": "RugBcn, Barcelona R users group",
+"locality": "Barcelona",
+"country": "es",
+"members":    138,
+"link": "http://www.meetup.com/RugBcn-Barcelona-R-users-group/",
+"title": "RugBcn, Barcelona R users group",
+"description": "<b>Members</b>: 138",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 13.405,  52.52 ] 
+},
+"properties": {
+ "group": "Berlin KNIME Users",
+"locality": "Berlin",
+"country": "de",
+"members":     74,
+"link": "http://www.meetup.com/Berlin-KNIME-Users/",
+"title": "Berlin KNIME Users",
+"description": "<b>Members</b>: 74",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 76.267, 9.9312 ] 
+},
+"properties": {
+ "group": "R Users Group Kochi",
+"locality": "Kochi",
+"country": "in",
+"members":      9,
+"link": "http://www.meetup.com/R-Users-Group-Kochi/",
+"title": "R Users Group Kochi",
+"description": "<b>Members</b>: 9",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 151.21, -33.867 ] 
+},
+"properties": {
+ "group": "Sydney Technology User Group Organisers",
+"locality": "Sydney",
+"country": "au",
+"members":      4,
+"link": "http://www.meetup.com/sydney-user-group-organisers/",
+"title": "Sydney Technology User Group Organisers",
+"description": "<b>Members</b>: 4",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -91.53, 41.661 ] 
+},
+"properties": {
+ "group": "Iowa City Data Science Meetup",
+"locality": "Iowa City",
+"country": "us",
+"members":     12,
+"link": "http://www.meetup.com/ICData-Science/",
+"title": "Iowa City Data Science Meetup",
+"description": "<b>Members</b>: 12",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -17.366, 14.765 ] 
+},
+"properties": {
+ "group": "DakaR R User Group",
+"locality": "Dakar",
+"country": "sn",
+"members":     55,
+"link": "http://www.meetup.com/DakaR-R-User-Group/",
+"title": "DakaR R User Group",
+"description": "<b>Members</b>: 55",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -87.906, 43.039 ] 
+},
+"properties": {
+ "group": "Milwaukee Data Science",
+"locality": "Milwaukee",
+"country": "us",
+"members":     41,
+"link": "http://www.meetup.com/Milwaukee-Data-Science/",
+"title": "Milwaukee Data Science",
+"description": "<b>Members</b>: 41",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -122.2,  47.61 ] 
+},
+"properties": {
+ "group": "Data Science Dojo",
+"locality": "Bellevue",
+"country": "us",
+"members":    268,
+"link": "http://www.meetup.com/data-science-dojo/",
+"title": "Data Science Dojo",
+"description": "<b>Members</b>: 268",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 4.8357, 45.764 ] 
+},
+"properties": {
+ "group": "RLyon",
+"locality": "Lyon",
+"country": "fr",
+"members":     53,
+"link": "http://www.meetup.com/R-Lyon/",
+"title": "RLyon",
+"description": "<b>Members</b>: 53",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 51.423, 35.696 ] 
+},
+"properties": {
+ "group": "Tehran R Users Group",
+"locality": "Tehran",
+"country": "ir",
+"members":    254,
+"link": "http://www.meetup.com/Tehran-R-Users-Group/",
+"title": "Tehran R Users Group",
+"description": "<b>Members</b>: 254",
+"marker-size": "small",
+"marker-color": "#bd0026",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -0.12776, 51.507 ] 
+},
+"properties": {
+ "group": "KNIME User Group UK",
+"locality": "London",
+"country": "gb",
+"members":     72,
+"link": "http://www.meetup.com/KNIME-User-Group-UK/",
+"title": "KNIME User Group UK",
+"description": "<b>Members</b>: 72",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -94.579,   39.1 ] 
+},
+"properties": {
+ "group": "Kansas City R Users Group",
+"locality": "Kansas City",
+"country": "us",
+"members":     87,
+"link": "http://www.meetup.com/Kansas-City-R-Users-Group/",
+"title": "Kansas City R Users Group",
+"description": "<b>Members</b>: 87",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -77.009, 40.214 ] 
+},
+"properties": {
+ "group": "Data Science Harrisburg",
+"locality": "Mechanicsburg",
+"country": "us",
+"members":     16,
+"link": "http://www.meetup.com/Data-Science-Harrisburg/",
+"title": "Data Science Harrisburg",
+"description": "<b>Members</b>: 16",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -118.81, 34.147 ] 
+},
+"properties": {
+ "group": "Westlake Village Data Science Meetup",
+"locality": "Westlake Village",
+"country": "us",
+"members":    127,
+"link": "http://www.meetup.com/Westlake-Village-Data-Science-Meetup/",
+"title": "Westlake Village Data Science Meetup",
+"description": "<b>Members</b>: 127",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -80.843, 35.227 ] 
+},
+"properties": {
+ "group": "Charlotte R Users Group",
+"locality": "Charlotte",
+"country": "us",
+"members":     72,
+"link": "http://www.meetup.com/Charlotte-R-Users-Group/",
+"title": "Charlotte R Users Group",
+"description": "<b>Members</b>: 72",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -89.401, 43.073 ] 
+},
+"properties": {
+ "group": "MadR - Madison R Programming UseRs Group",
+"locality": "Madison",
+"country": "us",
+"members":    103,
+"link": "http://www.meetup.com/MadR-Madison-R-Programming-UseRs-Group/",
+"title": "MadR - Madison R Programming UseRs Group",
+"description": "<b>Members</b>: 103",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -3.5339, 50.718 ] 
+},
+"properties": {
+ "group": "Exeter R Users Group (Exeter, Devon, England)",
+"locality": "Exeter",
+"country": "gb",
+"members":    107,
+"link": "http://www.meetup.com/Exeter-R-Users-Group-Exeter-Devon-England/",
+"title": "Exeter R Users Group (Exeter, Devon, England)",
+"description": "<b>Members</b>: 107",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -77.037, 38.907 ] 
+},
+"properties": {
+ "group": "Data Driven DC",
+"locality": "Washington",
+"country": "us",
+"members":    200,
+"link": "http://www.meetup.com/Data-Driven-DC/",
+"title": "Data Driven DC",
+"description": "<b>Members</b>: 200",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.944, 40.113 ] 
+},
+"properties": {
+ "group": "R <-Gang: R Programming & Statistical Computing Meetup",
+"locality": "Bensalem",
+"country": "us",
+"members":     42,
+"link": "http://www.meetup.com/R-Gang-R-Programming-Statistical-Computing-Meetup/",
+"title": "R <-Gang: R Programming & Statistical Computing Meetup",
+"description": "<b>Members</b>: 42",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.539, 41.053 ] 
+},
+"properties": {
+ "group": "Stamford Machine Learning / StatLearning Study Group",
+"locality": "Stamford",
+"country": "us",
+"members":     17,
+"link": "http://www.meetup.com/Stamford-Machine-Learning/",
+"title": "Stamford Machine Learning / StatLearning Study Group",
+"description": "<b>Members</b>: 17",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "NYC Sports Analytics",
+"locality": "New York",
+"country": "us",
+"members":    135,
+"link": "http://www.meetup.com/NYC-Sports-Analytics/",
+"title": "NYC Sports Analytics",
+"description": "<b>Members</b>: 135",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -71.882, 45.401 ] 
+},
+"properties": {
+ "group": "R Users Group de Sherbrooke",
+"locality": "Sherbrooke",
+"country": "ca",
+"members":     31,
+"link": "http://www.meetup.com/R-Users-Group-de-Sherbrooke/",
+"title": "R Users Group de Sherbrooke",
+"description": "<b>Members</b>: 31",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -99.133, 19.433 ] 
+},
+"properties": {
+ "group": "The México City R Users Group",
+"locality": "México City",
+"country": "mx",
+"members":      5,
+"link": "http://www.meetup.com/The-Mexico-City-R-Users-Group/",
+"title": "The México City R Users Group",
+"description": "<b>Members</b>: 5",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -80.414,  37.23 ] 
+},
+"properties": {
+ "group": "Blacksburg Data Science with R (and not only) Meetup Group",
+"locality": "Blacksburg",
+"country": "us",
+"members":     11,
+"link": "http://www.meetup.com/Blacksburg-Data-Science-with-R-and-not-only-Meetup-Group/",
+"title": "Blacksburg Data Science with R (and not only) Meetup Group",
+"description": "<b>Members</b>: 11",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -100.39, 20.589 ] 
+},
+"properties": {
+ "group": "Usuarios de R",
+"locality": "Querétaro",
+"country": "mx",
+"members":      1,
+"link": "http://www.meetup.com/Mexico-R-Users-Group/",
+"title": "Usuarios de R",
+"description": "<b>Members</b>: 1",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -82.999, 39.961 ] 
+},
+"properties": {
+ "group": "Columbus useR Group",
+"locality": "Columbus",
+"country": "us",
+"members":     35,
+"link": "http://www.meetup.com/Columbus-useR-Group/",
+"title": "Columbus useR Group",
+"description": "<b>Members</b>: 35",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -73.756, 42.653 ] 
+},
+"properties": {
+ "group": "Albany R Users Group",
+"locality": "Albany",
+"country": "us",
+"members":     18,
+"link": "http://www.meetup.com/Albany-R-Users-Group/",
+"title": "Albany R Users Group",
+"description": "<b>Members</b>: 18",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -80.204, 25.789 ] 
+},
+"properties": {
+ "group": "South Florida useR Group (R Programming Language)",
+"locality": "Miami",
+"country": "us",
+"members":     21,
+"link": "http://www.meetup.com/South-Florida-useR-Group-R-Programming-Language/",
+"title": "South Florida useR Group (R Programming Language)",
+"description": "<b>Members</b>: 21",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -74.006, 40.713 ] 
+},
+"properties": {
+ "group": "Stan Users - NYC",
+"locality": "New York",
+"country": "us",
+"members":     93,
+"link": "http://www.meetup.com/Stan-Users-NYC/",
+"title": "Stan Users - NYC",
+"description": "<b>Members</b>: 93",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -111.89, 40.761 ] 
+},
+"properties": {
+ "group": "Analyze Utah",
+"locality": "Salt Lake City",
+"country": "us",
+"members":      9,
+"link": "http://www.meetup.com/Analyze-Utah/",
+"title": "Analyze Utah",
+"description": "<b>Members</b>: 9",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 77.225, 28.635 ] 
+},
+"properties": {
+ "group": "Delhi R Users Group Meetup",
+"locality": "Delhi",
+"country": "in",
+"members":      2,
+"link": "http://www.meetup.com/Delhi-R-Users-Group-Meetup/",
+"title": "Delhi R Users Group Meetup",
+"description": "<b>Members</b>: 2",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 80.251, 13.052 ] 
+},
+"properties": {
+ "group": "R Users Group Chennai",
+"locality": "Chennai",
+"country": "in",
+"members":     93,
+"link": "http://www.meetup.com/R-Users-Group-Chennai/",
+"title": "R Users Group Chennai",
+"description": "<b>Members</b>: 93",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ -83.743, 42.281 ] 
+},
+"properties": {
+ "group": "Ann Arbor R User Group",
+"locality": "Ann Arbor",
+"country": "us",
+"members":     34,
+"link": "http://www.meetup.com/Ann-Arbor-R-User-Group/",
+"title": "Ann Arbor R User Group",
+"description": "<b>Members</b>: 34",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 72.152, 21.764 ] 
+},
+"properties": {
+ "group": "Bhavnagar Data Analysis Meetup",
+"locality": "Bhavnagar",
+"country": "in",
+"members":      4,
+"link": "http://www.meetup.com/Bhavnagar-Data-Analysis-Meetup/",
+"title": "Bhavnagar Data Analysis Meetup",
+"description": "<b>Members</b>: 4",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 37.617, 55.756 ] 
+},
+"properties": {
+ "group": "rMoscow",
+"locality": "Moscow",
+"country": "ru",
+"members":     53,
+"link": "http://www.meetup.com/rMoscow/",
+"title": "rMoscow",
+"description": "<b>Members</b>: 53",
+"marker-size": "small",
+"marker-color": "#f03b20",
+"marker-symbol": "library" 
+} 
+},
+{
+ "type": "Feature",
+"geometry": {
+ "type": "Point",
+"coordinates": [ 115.86, -31.953 ] 
+},
+"properties": {
+ "group": "Western Australia R Group (WARG)",
+"locality": "Perth",
+"country": "au",
+"members":     17,
+"link": "http://www.meetup.com/Western-Australia-R-Group-WARG/",
+"title": "Western Australia R Group (WARG)",
+"description": "<b>Members</b>: 17",
+"marker-size": "small",
+"marker-color": "#fd8d3c",
+"marker-symbol": "library" 
+} 
+} 
+],
+"hover": true,
+"id": "map" 
+}
+
+var map = L.mapbox.map('map', 
+    spec.map_id || 'examples.map-20v6611k'
+  )
+  .setView(spec.center, spec.zoom);
+  
+var myLayer = L.mapbox.featureLayer().addTo(map);
+
+myLayer.setGeoJSON(spec.geojson);
+
+if (spec.hover){
+  myLayer.on('mouseover', function(e) {
+    e.layer.openPopup();
+  });
+  myLayer.on('mouseout', function(e) {
+    e.layer.closePopup();
+  });
+}
+</script>
+    
+    <script></script>    
+  </body>
+</html>

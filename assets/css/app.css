@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+
+slide.quote strong {
+  color: red;
+  font-family: "Crimson Text";
+  font-size: 1.5em;
+}
+
+slide.quote q {
+  font-size: 48px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+slide.bigger pre {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+slide.smaller pre{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+slide.dark q {
+  color: whitesmoke;
+}
+
+li.tab::before{
+  content: ""
+}
+
+slide.centrepre pre{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+slide.centrepre code {
+  font-size: 22px;
+}
+
+#demo1-create pre{
+  width: 90%;
+}
+
+#demo1-create code{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+slides.layout-widescreen > slide.backdrop{
+  background: white;
+}
+
+#interactive-quiz pre{
+  line-height: 1.2em;
+}
+
+slides > slide.backdrop {
+  z-index: -10;
+  display: block !important;
+  background: white;
+  background-color: white;
+}
+slides {
+  background-color: white;
+}
+
+#rchartssite {
+  background-image: url('../img/rcharts_site.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#rmapssite {
+  background-image: url('../img/rmaps_site.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.segue h2 {
+  color: black;
+  font-size: 60px;
+}
