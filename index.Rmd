@@ -28,6 +28,8 @@ n1
 
 --- &interactive2 height:100
 
+<a class='example'>NVD3</a>
+
 ```{r, opts.label = 'interactive', results = 'asis'}
 hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == 'Male')
 library(rCharts)
@@ -37,6 +39,8 @@ n1
 ```
 
 --- &interactive2 height:40
+
+<a class='example'>DataTable</a>
 
 ```{r opts.label = 'interactive', results = 'asis'}
 library(rCharts)
@@ -55,6 +59,8 @@ hPlot(Pulse ~ Height, data = MASS::survey, size = 'Age', group = 'Exer', type = 
 ```
 
 --- &interactive2 height:75
+
+<a class='example'>Polycharts</a>
 
 ```{r opts.label = 'interactive', results = 'asis'}
 library(rCharts)
@@ -346,6 +352,8 @@ uPlot <- function(x, y, data, group = NULL, type, ...){
 ```
 
 --- &interactive2 height:40 lib:uvcharts
+
+<a class='example'>uvCharts</a>
 
 ```{r opts.label = 'interactive', results = 'asis'}
 library(rCharts)

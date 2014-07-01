@@ -4,4 +4,4 @@ hitheme     : solarized_light      #
 widgets     : [bootstrap, quiz, interactive]          
 mode        : selfcontained # {standalone, draft}
 ext_widgets : {rCharts: [libraries/nvd3, libraries/highcharts]}
-github      : {user: slidify, repo: idocs}
+github      : {user: ramnathv, repo: "user2014-rcharts"}

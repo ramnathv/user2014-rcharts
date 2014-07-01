@@ -22,6 +22,8 @@ n1</textarea>
 
 --- &interactive2 height:100
 
+<a class='example'>NVD3</a>
+
 <textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>hair_eye_male <- subset(as.data.frame(HairEyeColor), Sex == 'Male')
 library(rCharts)
 n1 <- nPlot(Freq ~ Hair, group = 'Eye', data = hair_eye_male, type = 'multiBarChart')
@@ -29,6 +31,8 @@ n1$chart(color = c('brown', 'blue', '#594c26', 'green'))
 n1</textarea>
 
 --- &interactive2 height:40
+
+<a class='example'>DataTable</a>
 
 <textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>library(rCharts)
 dTable(MASS::survey)</textarea>
@@ -43,6 +47,8 @@ hPlot(Pulse ~ Height, data = MASS::survey, size = 'Age', group = 'Exer', type = 
 )</textarea>
 
 --- &interactive2 height:75
+
+<a class='example'>Polycharts</a>
 
 <textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>library(rCharts)
 rPlot(mpg ~ wt | am + vs, data = mtcars, color = 'gear', type = 'point')</textarea>
@@ -96,7 +102,7 @@ library(rMaps)
 ichoropleth(Crime ~ State, data = violent_crime, animate = "Year")
 ```
 
-<iframe src=' assets/fig/unnamed-chunk-9.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart17827fac131c ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/unnamed-chunk-9.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart17825053c1f3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
 ---
@@ -119,7 +125,7 @@ d1 <- crosslet(
 d1
 ```
 
-<iframe src=' assets/fig/unnamed-chunk-11.html ' scrolling='no' frameBorder='0' seamless class='rChart crosslet ' id=iframe- chart17827a1ad4bf ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/unnamed-chunk-11.html ' scrolling='no' frameBorder='0' seamless class='rChart crosslet ' id=iframe- chart17822ae261b8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 
 --- .segue .nobackground
@@ -308,7 +314,7 @@ uvcharts:
 ## Data
 
 <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
-<!-- Tue Jul  1 13:29:36 2014 -->
+<!-- Tue Jul  1 13:38:44 2014 -->
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> Hair </TH> <TH> Eye </TH> <TH> Sex </TH> <TH> Freq </TH>  </TR>
   <TR> <TD align="right"> 1 </TD> <TD> Black </TD> <TD> Brown </TD> <TD> Male </TD> <TD align="right"> 32.00 </TD> </TR>
@@ -372,6 +378,8 @@ uPlot <- function(x, y, data, group = NULL, type, ...){
 
 
 --- &interactive2 height:40 lib:uvcharts
+
+<a class='example'>uvCharts</a>
 
 <textarea class='interactive' id='interactive{{slide.num}}' data-cell='{{slide.num}}' data-results='asis' style='display:none'>library(rCharts)
 uPlot(x = 'Sex', y = 'Freq', data = as.data.frame(HairEyeColor), group = 'Hair', type = 'Bar')</textarea>

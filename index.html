@@ -49,7 +49,7 @@
     <h2>rCharts, UseR 2014</h2>
     <p>Ramnath Vaidyanathan (@ramnath_vaidya)<br/>McGill University</p>
   </hgroup>
-    <a href="https://github.com/slidify/idocs/zipball/gh-pages" class="example">
+    <a href="https://github.com/ramnathv/user2014-rcharts/zipball/gh-pages" class="example">
      Download
     </a>
   <article></article>  
@@ -124,7 +124,9 @@ n1</textarea></p>
 <div class='row-fluid'>
   <div class='span12'>
     <form id="knitForm4" data-cell="4">
-      <p><textarea class='interactive' id='interactive4' data-cell='4' data-results='asis' style='display:none'>hair_eye_male &lt;- subset(as.data.frame(HairEyeColor), Sex == &#39;Male&#39;)
+      <p><a class='example'>NVD3</a></p>
+
+<p><textarea class='interactive' id='interactive4' data-cell='4' data-results='asis' style='display:none'>hair_eye_male &lt;- subset(as.data.frame(HairEyeColor), Sex == &#39;Male&#39;)
 library(rCharts)
 n1 &lt;- nPlot(Freq ~ Hair, group = &#39;Eye&#39;, data = hair_eye_male, type = &#39;multiBarChart&#39;)
 n1$chart(color = c(&#39;brown&#39;, &#39;blue&#39;, &#39;#594c26&#39;, &#39;green&#39;))
@@ -169,7 +171,9 @@ n1</textarea></p>
 <div class='row-fluid'>
   <div class='span12'>
     <form id="knitForm5" data-cell="5">
-      <p><textarea class='interactive' id='interactive5' data-cell='5' data-results='asis' style='display:none'>library(rCharts)
+      <p><a class='example'>DataTable</a></p>
+
+<p><textarea class='interactive' id='interactive5' data-cell='5' data-results='asis' style='display:none'>library(rCharts)
 dTable(MASS::survey)</textarea></p>
 
       <div id='aceeditor5' style="height:40px;"></div>
@@ -256,7 +260,9 @@ hPlot(Pulse ~ Height, data = MASS::survey, size = &#39;Age&#39;, group = &#39;Ex
 <div class='row-fluid'>
   <div class='span12'>
     <form id="knitForm7" data-cell="7">
-      <p><textarea class='interactive' id='interactive7' data-cell='7' data-results='asis' style='display:none'>library(rCharts)
+      <p><a class='example'>Polycharts</a></p>
+
+<p><textarea class='interactive' id='interactive7' data-cell='7' data-results='asis' style='display:none'>library(rCharts)
 rPlot(mpg ~ wt | am + vs, data = mtcars, color = &#39;gear&#39;, type = &#39;point&#39;)</textarea></p>
 
       <div id='aceeditor7' style="height:75px;"></div>
@@ -382,7 +388,7 @@ L1
 ichoropleth(Crime ~ State, data = violent_crime, animate = &quot;Year&quot;)
 </code></pre>
 
-<p><iframe src=' assets/fig/unnamed-chunk-9.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart17827fac131c ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+<p><iframe src=' assets/fig/unnamed-chunk-9.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart17825053c1f3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -401,7 +407,7 @@ ichoropleth(Crime ~ State, data = violent_crime, animate = &quot;Year&quot;)
 d1
 </code></pre>
 
-<p><iframe src=' assets/fig/unnamed-chunk-11.html ' scrolling='no' frameBorder='0' seamless class='rChart crosslet ' id=iframe- chart17827a1ad4bf ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+<p><iframe src=' assets/fig/unnamed-chunk-11.html ' scrolling='no' frameBorder='0' seamless class='rChart crosslet ' id=iframe- chart17822ae261b8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -677,7 +683,7 @@ n1$publish(&#39;mychart.html&#39;)
   <article data-timings="">
     <!-- html table generated in R 3.1.0 by xtable 1.7-3 package -->
 
-<!-- Tue Jul  1 13:29:36 2014 -->
+<!-- Tue Jul  1 13:38:44 2014 -->
 
 <TABLE border=1>
 <TR> <TH>  </TH> <TH> Hair </TH> <TH> Eye </TH> <TH> Sex </TH> <TH> Freq </TH>  </TR>
@@ -754,7 +760,9 @@ n1$publish(&#39;mychart.html&#39;)
 <div class='row-fluid'>
   <div class='span12'>
     <form id="knitForm33" data-cell="33">
-      <p><textarea class='interactive' id='interactive33' data-cell='33' data-results='asis' style='display:none'>library(rCharts)
+      <p><a class='example'>uvCharts</a></p>
+
+<p><textarea class='interactive' id='interactive33' data-cell='33' data-results='asis' style='display:none'>library(rCharts)
 uPlot(x = &#39;Sex&#39;, y = &#39;Freq&#39;, data = as.data.frame(HairEyeColor), group = &#39;Hair&#39;, type = &#39;Bar&#39;)</textarea></p>
 
       <div id='aceeditor33' style="height:40px;"></div>
